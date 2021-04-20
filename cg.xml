@@ -1,0 +1,20 @@
+<!-- Definition for your Coarse-Grained atoms -->
+<ForceField>
+<!-- Specify atom types -->
+<!-- name should be unique, and class could be more general, Example below -->
+<!-- <Type name="tip3p-O" class="OW" element="O" mass="15.99943"/> -->
+<AtomTypes>
+    <Type name="CA" class="C" element="C" mass="12.01078"/>
+</AtomTypes>
+
+<!-- Setup residue templates -->
+<!-- use type to match the atom type, and the element to match the residue, example below -->
+<!-- <Atom name="O" type="tip3p-O"/> -->
+<Residues>
+    <Residue name="RES">
+    <Atom name="Res" type="CA"/>
+    <!-- <Atom name="Res1" type="CA"/> -->
+    </Residue>
+</Residues>
+
+</ForceField>
